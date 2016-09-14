@@ -1,0 +1,11 @@
+123141 Lee Johnson 72 85 90
+999999 Jamie Smith 90 92 91
+882342 JC Forney 100 81 97
+234915 Terry Lee 100 99 100
+123156 Tracey Camp 77 84 84
+123585 Laney Camp 70 74 71
+342963 Skylar Camp 78 81 82
+434852 Jess Forester 85 80 82
+834958 Chris Forester 97 94 89
+283459 Chris Forester 80 80 80
+548343 Chris Forester 90 90 90
