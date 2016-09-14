@@ -1,2 +1,3 @@
 # lab4
-Partner
+Partner: Rei Isobe
+Le Qin
