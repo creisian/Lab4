@@ -1,0 +1,36 @@
+Step 2) 
+   diff fruitsOld.txt fruitsNew.txt
+   diff -c fruitsOld.txt fruitsNew.txt
+
+Step 3) 
+  wc testPasswd.txt
+  15lines, 692characters
+
+Step 4)
+   cut -f 1 -d ':' testPasswd.txt
+   cut -f 2,4 -d ' ' grades.txt
+
+Step 5) 
+   cut -f 3 -d ':' testPasswd.txt | sort -g | uniq
+   touch list.txt \ cut -f 3 -d ':' testPasswd.txt | sort -g | uniq > list.txt
+   grep '^m\|^w\|^s' testPasswd.txt | cut -f 1 -d ':'
+
+Step 6) 
+   sed 's/[a-zA-Z]//g' leetSpeak.txt
+   sed 's/[0-9]//g' leetSpeak.txt
+   sed 's/ //g' leetSpeak.txt
+
+   sed -i 's/0/o/g' leetSpeak.txt | sed -i 's/1/i/g' leetSpeak.txt | sed -i 's/3/e/g' leetSpeak.txt | sed -i 's/4/a/g' leetSpeak.txt | sed -i 's/5/s/g' leetSpeak.txt | sed 's/7/t/g' leetSpeak.txt
+
+   You can change the name of the text file and it should work the same way.
+
+Step 7) 
+   awk 'BEGIN {print "Name\tAverage Grade"} FNR>=2 {avg=(($3+$4+$5+$6+$7)/5)*100; print $1, $2, '\t', avg}' grades.txt
+   awk 'FNR>=2 {cavg=cavg+$3} END{cavg=cavg/7*100; print "Class Average for Lab 1: ", cavg}' grades.txt
+
+Step 8)
+   grep -c '[0-9]\{3\}-[0-9]\{3\}-[0-9]\{4\}' regex_practice_data.txt
+   grep -c '303-[0-9]\{3\}-[0-9]\{4\}' regex_practice_data.txt
+   grep -c '@' regex_practice_data.txt
+   grep -c '@.*gov' regex_practice_data.txt
+   grep -c '^[a-mA-M].*[.].*@' regex_practice_data.txt
