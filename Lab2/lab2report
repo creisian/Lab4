@@ -1,0 +1,20 @@
+1.
+(1)	add Cranberry
+	delete Jackfruit
+	add add Nectarine
+	add Prickly Pear
+(2)	"<" means it is from file 1
+	">" means it is from file 2
+(3) 	it provides context view.
+2.
+(1)	wc -l testPasswd.txt
+(2)	wc -c testPasswd.txt
+3.
+(1)	cut -d: -f1 testPasswd.txt
+(2)	cut -d ' ' -f 2,4 grades.txt
+4.
+(1)	cut -d: -f4 textPasswd.txt | sort -g | uniq
+(2)	touch ~/five |cut -d: -f4 textPasswd.txt | sort -g | uniq > ~/five
+(3)	grep '^m\|^w\|^s' testPasswd.txt | cut -d: -f1
+5.
+
